@@ -56,4 +56,27 @@ export class AccountService{
     getReportList():Observable<Report[]>{
         return this.http.get<Report[]>(`${environment.apiURL}/api/report/allReports`);
     }
+
+    getMyReportList(id):Observable<Report[]>{
+        return this.http.get<Report[]>(`${environment.apiURL}/api/report/getAllMyReport/${id}`)
+    }
+
+    getApproveList():Observable<Report[]>{
+        return this.http.get<Report[]>(`${environment.apiURL}/api/report/approvedReports`);
+    }
+
+    deleteRows(rows):Observable<Report[]>{
+        return this.http.post<Report[]>(`${environment.apiURL}/api/report/deleteSelectedReports`,{rows})
+    }
+
+    approveRows(rows):Observable<Report[]>{
+        return this.http.post<Report[]>(`${environment.apiURL}/api/report/approveSelectedReports`,{rows})
+    }
+    unapproveRows(rows):Observable<Report[]>{
+        return this.http.post<Report[]>(`${environment.apiURL}/api/report/unapproveSelectedReports`,{rows})
+    }
+
+    getReport(id):Observable<Report>{
+        return this.http.get<Report>(`${environment.apiURL}/api/report/getReport/${id}`);
+    }
 }

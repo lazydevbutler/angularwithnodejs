@@ -1,7 +1,17 @@
 .mat-spacer{
     flex:1 1 auto;
 }
-
+table {
+  width: 100%;
+}
+.table-padding{
+  margin: 20px;
+  height: 400px;
+  overflow: auto;
+  border: 0px solid;
+  box-shadow: 1px 1px #888888;
+  overflow-x: scroll;
+}
 .left-button{
     float: left;
 }
@@ -28,4 +38,36 @@
 
 .mat-icon-button.mat-success {
   color:#155724;
+}
+
+.text-form{
+  max-width: 500px;
+  min-width: 400px;
+}
+
+.table-cell-text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // display: block;
+  max-width: 200px;
+  white-space: nowrap;
+}
+
+.button-groups{
+  margin:20px;
+  display:flex;
+  justify-content: space-evenly
+}
+
+
+.main-card{
+  height: 90vh;
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.card-inline{
+  display:inline-block;
 }

@@ -4,11 +4,11 @@ import { User, Report } from '../_models';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-    selector:'app-view-report',
+    selector:'app-home-view-report',
     templateUrl:'./view-report.component.html',
-    styleUrls:['./admin.component.scss']
+    styleUrls:['./home.component.scss']
 })
-export class ReportDetailsComponent implements OnInit{
+export class HomeReportDetailsComponent implements OnInit{
     report: Report
     id: number;
     loading:boolean = false;
@@ -25,6 +25,7 @@ export class ReportDetailsComponent implements OnInit{
 
     ngOnInit(){
         this.id = this.route.snapshot.params.data;
+        // console.log(this.id);
         this.getSingleReport(this.id)
     }
     getSingleReport(id){
@@ -37,7 +38,7 @@ export class ReportDetailsComponent implements OnInit{
         )
     }
     goback(){
-        this.router.navigate(['admin/reportList'])
+        this.router.navigate(['home/reportList'])
     }
     logout(){
         this.accountService.logout();

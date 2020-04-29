@@ -1,0 +1,19 @@
+<div *ngIf="loading" class="main-card">
+<mat-card class="reportDetailsCard">
+  <mat-card-header>
+    <mat-card-title>{{report.username}}</mat-card-title>
+    <mat-card-subtitle>{{report.timestamp | date:'MM/dd/yyyy'}}</mat-card-subtitle>
+  </mat-card-header>
+  
+  <mat-card-content>
+    <p>
+     {{report.details}}
+    </p>
+  </mat-card-content>
+
+  Approval: <span>{{report.approval}}</span>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="goback()">Go Back</button>
+  </mat-card-actions>
+</mat-card>
+</div>

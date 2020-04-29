@@ -4,3 +4,62 @@
 table {
   width: 100%;
 }
+.table-padding{
+  margin: 20px;
+  height: 400px;
+  overflow: auto;
+  border: 0px solid;
+  box-shadow: 1px 1px #888888;
+}
+
+.button-groups{
+  margin:20px;
+  display:flex;
+  justify-content: space-evenly
+}
+
+.mat-button.mat-success,
+.mat-stroked-button.mat-success {
+    color: #155724;
+}
+.mat-button.mat-success:hover,
+.mat-stroked-button.mat-success:hover {
+  background-color: #f0fff3;
+}
+
+.mat-raised-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+  color: #f0fff3;
+  background-color: #155724;
+}
+
+.mat-icon-button.mat-success {
+  color:#155724;
+}
+
+.reportDetailsCard{
+  width:500px;
+  border: 1px solid;
+}
+
+.main-card{
+  height: 90vh;
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.card-inline{
+  display:inline-block;
+}
+
+.table-cell-text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // display: block;
+  max-width: 200px;
+  white-space: nowrap;
+}

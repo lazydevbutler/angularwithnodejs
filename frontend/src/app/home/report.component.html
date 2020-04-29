@@ -5,7 +5,7 @@
     <div *ngIf="createReport">
         <mat-grid-tile [(ngModel)]="createReport" ngDefaultControl [colspan]="2" [rowspan]="5">
             <div>
-                <mat-form-field style="width: 700px; height: 300px;" appearence="fill">
+                <mat-form-field class="text-form" appearence="fill">
                     <textarea [(ngModel)]="report" matInput matTextareaAutosize matAutosizeMinRows=1 matAutosizeMaxRows=20></textarea>
                 </mat-form-field>
             </div>
@@ -14,11 +14,10 @@
 
     <div *ngIf="createReport" >
         <mat-grid-tile [colspan]="1" [rowspan]="1">
-            <button mat-raised-button color="warn" >Back</button>
+            <button mat-raised-button color="warn" (click)="back()" >Back</button>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="1" [rowspan]="1">
             <button mat-raised-button color="success" (click)="submitNewReport()">Submit</button>
         </mat-grid-tile>
     </div>
-
 </mat-grid-list>

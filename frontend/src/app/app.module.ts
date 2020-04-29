@@ -26,6 +26,11 @@ import { ReportListComponent } from './admin/report-list.component';
 import { ReportDetailsComponent } from './admin/view-report.component';
 import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { UserReportListComponent } from './home/user-report-list.component';
+import {HomeReportDetailsComponent} from './home/view-report.component'
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
@@ -38,6 +43,8 @@ import {MatTableModule} from '@angular/material/table';
     AdminComponent,
     ReportListComponent,
     ReportDetailsComponent,
+    UserReportListComponent,
+    HomeReportDetailsComponent,
     
   ],
   imports: [
@@ -56,7 +63,9 @@ import {MatTableModule} from '@angular/material/table';
     MatIconModule,
     ReactiveFormsModule,
     MatListModule,
-    MatTableModule
+    MatTableModule,
+    MatCheckboxModule,
+    MatTabsModule,
   ],
   providers: [
     { provide:HTTP_INTERCEPTORS,useClass:JwtInterceptor,multi:true },

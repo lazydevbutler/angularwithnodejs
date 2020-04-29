@@ -18,6 +18,7 @@
                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                 </button>
             </mat-form-field>
+            <div *ngIf="errorLogin" style="color: red;"> Username or password not found</div>
             <button class="button" mat-raised-button color="primary">Login</button>
         </div>
         <div class="register">

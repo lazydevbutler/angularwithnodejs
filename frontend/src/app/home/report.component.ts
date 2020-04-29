@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AccountService } from '../_service';
 import { User } from '../_models';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
     selector:'app-report',
@@ -11,13 +12,19 @@ export class ReportComponent implements OnInit{
     report: string;
 
     constructor(
-       private accountService:AccountService
+       private accountService:AccountService,
+       private route: ActivatedRoute,
+       private router: Router,
+
     ){}
    ngOnInit(){
 
    }
    createNewReport(){
     this.createReport = true;
+   }
+   back(){
+       this.router.navigate(['home/reportList'])
    }
 
    submitNewReport(){

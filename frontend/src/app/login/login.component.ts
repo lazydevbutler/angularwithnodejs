@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit{
     loading=false;
     submitted=false;
     loginForm:FormGroup;
+    errorLogin:boolean = false;
 
     constructor(
         private formBuilder: FormBuilder,
@@ -57,10 +58,13 @@ export class LoginComponent implements OnInit{
                     this.router.navigate(['./admin/reportList'])
                    }
                    else{
-                   this.router.navigate(['/home/report']);
+                   this.router.navigate(['/home/reportList']);
                    }
+                   this.errorLogin = false;
                 },
                 error => {
+                    console.log(error);
+                    this.errorLogin = true;
                     this.alertService.error(error);
                     this.loading = false;
                 });

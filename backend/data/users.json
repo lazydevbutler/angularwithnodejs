@@ -12,26 +12,26 @@
     "id": 2
   },
   {
-    "username": "sdfsfsfsf",
-    "password": "fsdfdsf",
+    "username": "revenger",
+    "password": "revenger",
     "role": "user",
     "id": 3
   },
   {
-    "username": "dfsfsfs",
-    "password": "sdfsfs",
+    "username": "master",
+    "password": "master",
     "role": "user",
     "id": 4
   },
   {
-    "username": "dfsfsfssdf",
-    "password": "sdfsfs",
+    "username": "john",
+    "password": "john",
     "role": "user",
     "id": 5
   },
   {
-    "username": "dsfs",
-    "password": "dsf",
+    "username": "marry",
+    "password": "marry",
     "role": "user",
     "id": 6
   }
