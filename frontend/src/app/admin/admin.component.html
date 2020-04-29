@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+    
+      <span>{{user.username}}</span>
+      <span class="mat-spacer"></span>
+      <button mat-icon-button (click)="logout()" >
+         <mat-icon class="exit-icon" aria-hidden="false" aria-label="exit icon">exit_to_app</mat-icon>
+    </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+    
+<router-outlet></router-outlet>

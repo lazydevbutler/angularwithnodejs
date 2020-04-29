@@ -1,0 +1,38 @@
+[
+  {
+    "username": "admin",
+    "password": "admin",
+    "role": "admin",
+    "id": 1
+  },
+  {
+    "username": "user",
+    "password": "user",
+    "role": "user",
+    "id": 2
+  },
+  {
+    "username": "sdfsfsfsf",
+    "password": "fsdfdsf",
+    "role": "user",
+    "id": 3
+  },
+  {
+    "username": "dfsfsfs",
+    "password": "sdfsfs",
+    "role": "user",
+    "id": 4
+  },
+  {
+    "username": "dfsfsfssdf",
+    "password": "sdfsfs",
+    "role": "user",
+    "id": 5
+  },
+  {
+    "username": "dsfs",
+    "password": "dsf",
+    "role": "user",
+    "id": 6
+  }
+]

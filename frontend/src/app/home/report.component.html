@@ -1,0 +1,24 @@
+<mat-grid-list cols="2" rowHeight="8:1">
+    <mat-grid-tile [colspan]="2" [rowspan]="3">
+        <button mat-raised-button color="primary" (click)="createNewReport()">Create new report</button>
+    </mat-grid-tile>
+    <div *ngIf="createReport">
+        <mat-grid-tile [(ngModel)]="createReport" ngDefaultControl [colspan]="2" [rowspan]="5">
+            <div>
+                <mat-form-field style="width: 700px; height: 300px;" appearence="fill">
+                    <textarea [(ngModel)]="report" matInput matTextareaAutosize matAutosizeMinRows=1 matAutosizeMaxRows=20></textarea>
+                </mat-form-field>
+            </div>
+        </mat-grid-tile>
+    </div>
+
+    <div *ngIf="createReport" >
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <button mat-raised-button color="warn" >Back</button>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <button mat-raised-button color="success" (click)="submitNewReport()">Submit</button>
+        </mat-grid-tile>
+    </div>
+
+</mat-grid-list>
